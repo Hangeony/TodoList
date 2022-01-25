@@ -1,12 +1,15 @@
 const express = require('express');
+const todo = require("../models/todo");
 
 const router = express.Router();
+
+//t
 
 //리스트
 router.get("/" , (req, res, next) => {
     res.status(200).json({
         ok : true
-    })
+    });
 });
 
 //등록
